@@ -33,7 +33,14 @@ h5 {
   padding: 0;
   margin: 0;
 }
-
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 a {
   text-decoration: none;
   color: #e8bd74;
@@ -53,4 +60,8 @@ section {
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: 'Roboto', sans-serif;
+}
+
+#about_me {
+  font-size: 1.25rem;
 }
