@@ -1,7 +1,7 @@
 body {
   background-color: #262d3c;
   color: #e8bd74;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Julius Sans One', 'sans-serif';
 }
 .container,
 .container-fluid,
@@ -25,14 +25,15 @@ h5 {
   line-height: 1.2;
   text-align: center;
   color: #e8bd74;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Julius Sans One', 'sans-serif';
 }
 .navbar {
   color: #262d3c;
   font-family: 'Cinzel', serif;
-  padding: 0;
+  padding: 5px, 0px;
   margin: 0;
 }
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -45,6 +46,10 @@ a {
   text-decoration: none;
   color: #e8bd74;
   background-color: transparent;
+}
+a:hover {
+  color: #ae8842;
+  text-decoration: underline;
 }
 header img {
   width: 100vw;
@@ -59,9 +64,12 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'sans-serif';
 }
 
+.work-link {
+  text-align: center;
+}
 #about_me {
   font-size: 1.25rem;
 }
