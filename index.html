@@ -12,6 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/83dcf5b01b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_S7qQXGRQYZyX5Pk3qktHb");
+   })();
+</script>
     <title>Martin Maguire Portfolio</title>
 </head>
 
@@ -62,6 +70,22 @@
             </div>
         </div>
     </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>My skills</h1>
+                    <div class="d-flex skills-flex">
+                        <div class="skill-card">HTML <i class="fab fa-html5"></i></div>
+                        <div class="skill-card">CSS <i class="fab fa-css3-alt"></i></div>
+                        <div class="skill-card">Javascript <i class="fab fa-js-square"></i></div>
+                        <div class="skill-card">React <i class="fab fa-react"></i></div>
+                        <div class="skill-card">Bootstrap <i class="fab fa-bootstrap"></i></div>
+                        <div class="skill-card">Python <i class="fab fa-python"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="container my-Work">
         <div class="row">
             <div class="col-12">
@@ -140,29 +164,29 @@
   
                     <div class="form-group">
                         <label class="form-label" id="nameLabel" for="name"></label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
                     </div>
   
                     <div class="form-group">
                         <label class="form-label" id="emailLabel" for="email"></label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
                     </div>
   
                     <div class="form-group">
-                        <label class="form-label" id="subjectLabel" for="sublect"></label>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+                        <label class="form-label" id="subjectLabel" for="subject"></label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                     </div>
   
                     <div class="form-group">
                         <label class="form-label" id="messageLabel" for="message"></label>
-                        <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your message" tabindex="4"></textarea>                                 
+                        <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your message"></textarea>                                 
                     </div>
   
                     <div class="text-center margin-top-25">
                         <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
                     </div>
   
-                </form><!-- End form -->
+                </form>End form
               
             </div><!-- End col -->
   
@@ -226,6 +250,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
+         <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>

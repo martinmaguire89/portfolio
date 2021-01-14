@@ -287,3 +287,13 @@ a.btn-mod {
     font-size: 11px;
   }
 }
+
+.skill-card {
+  box-shadow: 4px 4px 5px rgba(#efe5e5, 0.8), -2px -2px 5px rgba(#efe5e5, 0.8);
+  padding: 12px 17px;
+  border-radius: 10px;
+}
+.skills-flex {
+  justify-content: space-evenly;
+  font-size: 20px;
+}
