@@ -55,9 +55,9 @@ a:hover {
 }
 header img {
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   object-fit: cover;
-  filter: brightness(0.4);
+  filter: brightness(0.5);
 }
 
 section {
@@ -66,7 +66,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Julius Sans One', 'sans-serif';
 }
 
 .work-link {
@@ -292,8 +292,25 @@ a.btn-mod {
   box-shadow: 4px 4px 5px rgba(#efe5e5, 0.8), -2px -2px 5px rgba(#efe5e5, 0.8);
   padding: 12px 17px;
   border-radius: 10px;
+  text-align: center;
 }
 .skills-flex {
   justify-content: space-evenly;
   font-size: 20px;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size: xxx-large;
 }
