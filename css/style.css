@@ -2,6 +2,10 @@ body {
   background-color: #262d3c;
   color: #e8bd74;
   font-family: 'Julius Sans One', 'sans-serif';
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 .container,
 .container-fluid,
@@ -72,6 +76,10 @@ section {
 .work-link {
   text-align: center;
 }
+.work-link p {
+  text-align: center;
+  color: #e8bd74;
+}
 #about_me {
   font-size: 1.25rem;
 }
@@ -80,18 +88,6 @@ section {
   padding: 1em 0;
   float: right;
   width: 50%;
-}
-@media screen and (max-width: 640px) {
-  .myWork {
-    display: block;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .myWork {
-    width: 33.33333%;
-  }
 }
 
 .myWork .title {
@@ -297,6 +293,12 @@ a.btn-mod {
 .skills-flex {
   justify-content: space-evenly;
   font-size: 20px;
+}
+@media screen and (max-width: 700px) {
+  .skills-flex {
+    flex-direction: column;
+    transition: ease-in-out 0.4s;
+  }
 }
 
 .fa,
