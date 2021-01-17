@@ -64,6 +64,12 @@ header img {
   filter: brightness(0.5);
 }
 
+@media screen and (max-width: 700px) {
+  .work-link .fas {
+    display: none;
+  }
+}
+
 section {
   position: absolute;
   top: 50%;
@@ -75,6 +81,15 @@ section {
 
 .work-link {
   text-align: center;
+}
+.work-link .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  justify-content: center;
+  margin-left: 0px;
 }
 .work-link p {
   text-align: center;
@@ -300,13 +315,8 @@ a.btn-mod {
     transition: ease-in-out 0.4s;
   }
 }
-
-.fa,
-.fab,
-.fad,
-.fal,
-.far,
-.fas {
+.skill-card,
+.fab {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
