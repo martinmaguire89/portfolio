@@ -118,7 +118,9 @@ section {
 .content {
   position: relative;
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
+  height: 300px;
+  max-height: 90%;
   margin: auto;
   overflow: hidden;
 }
@@ -170,7 +172,7 @@ section {
 }
 
 .content-details h3 {
-  color: #fff;
+  color: #e8bd74;
   font-weight: 500;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
@@ -178,7 +180,7 @@ section {
 }
 
 .content-details p {
-  color: #fff;
+  color: #e8bd74;
   font-size: 0.8em;
 }
 
