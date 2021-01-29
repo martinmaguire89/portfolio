@@ -11,6 +11,12 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .container,
 .container-fluid,
 .container-lg,
@@ -74,7 +80,7 @@ header img {
   }
 }
 
-section {
+#intro {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -306,7 +312,6 @@ a.btn-mod {
 }
 
 .skill-card {
-  box-shadow: 4px 4px 5px rgba(#efe5e5, 0.8), -2px -2px 5px rgba(#efe5e5, 0.8);
   padding: 12px 17px;
   border-radius: 10px;
   text-align: center;
@@ -314,6 +319,7 @@ a.btn-mod {
 .skills-flex {
   justify-content: space-evenly;
   font-size: 20px;
+  display: flex;
 }
 @media screen and (max-width: 700px) {
   .skills-flex {
@@ -331,4 +337,14 @@ a.btn-mod {
   text-rendering: auto;
   line-height: 1;
   font-size: xxx-large;
+}
+
+section {
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 100px 0;
+  }
 }
