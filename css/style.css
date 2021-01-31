@@ -345,6 +345,19 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 100px 0;
+    padding: 150px 0;
   }
+}
+
+.box {
+  transform: translateX(400%);
+  transition: transform 1s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
 }
