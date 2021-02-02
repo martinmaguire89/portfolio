@@ -355,10 +355,23 @@ section {
   transition: transform 1s ease;
 }
 
-.box:nth-of-type(even) {
+.box:nth-of-type(odd) {
   transform: translateX(-400%);
 }
 
 .box.show {
+  transform: translateX(0);
+}
+
+.box2 {
+  transform: translateX(400%);
+  transition: transform 1s ease;
+}
+
+.box2:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box2.show {
   transform: translateX(0);
 }
