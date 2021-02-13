@@ -13,15 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-#text {
-  color: #e8bd74;
-  font-size: 58px;
-  /* text-shadow: 0px 0px 10px #e8bd74, 0px 0px 5px #e8bd74; */
-  transition: 0.5 ease-in;
-  justify-self: start;
-}
 /* cursor */
-
 .txt-type > .txt {
   border-right: 0.2rem solid #e8bd74;
 }
@@ -320,8 +312,14 @@ a.btn-mod {
 
 .skill-card {
   padding: 12px 17px;
-  border-radius: 10px;
+  border: 1px solid #e8bd74;
+  background: rgb(27, 85, 110, 0.1);
+  height: 100%;
   text-align: center;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.2);
 }
 .skills-flex {
   justify-content: space-evenly;
@@ -345,14 +343,37 @@ a.btn-mod {
   line-height: 1;
   font-size: xxx-large;
 }
+.skills-card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+}
+.skills-image {
+  text-align: center;
+}
+
+.skills-title {
+  padding-bottom: 50px;
+}
 
 section {
   padding: 50px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   section {
     padding: 150px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 100px 0;
   }
 }
 
