@@ -73,9 +73,23 @@ header img {
   filter: brightness(0.4);
 }
 
-@media screen and (max-width: 700px) {
-  .work-link .fas {
-    display: none;
+@media screen and (min-width: 992px) {
+  .work-link h1 {
+    font-size: 5rem;
+  }
+  .work-link .row span {
+    color: #e8bd74;
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .work-link .row span {
+    color: #e8bd74;
+    font-size: 2rem;
+  }
+  .work-link h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -99,17 +113,20 @@ header img {
   margin-right: 0px;
   justify-content: center;
   margin-left: 0px;
+  color: #e8bd74;
+  font-size: 2.25rem;
 }
 .work-link p {
   text-align: center;
   color: #e8bd74;
 }
+
 #about_me {
   font-size: 1.25rem;
 }
 
 .myWork {
-  padding: 1em 0;
+  padding: 1rem 0;
   float: right;
   width: 50%;
 }
