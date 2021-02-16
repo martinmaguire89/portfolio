@@ -73,16 +73,6 @@ header img {
   filter: brightness(0.4);
 }
 
-@media screen and (min-width: 992px) {
-  .work-link h1 {
-    font-size: 5rem;
-  }
-  .work-link .row span {
-    color: #e8bd74;
-    font-size: 4.5rem;
-  }
-}
-
 @media screen and (min-width: 425px) {
   .work-link .row span {
     color: #e8bd74;
@@ -90,6 +80,16 @@ header img {
   }
   .work-link h2 {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .work-link h1 {
+    font-size: 5rem;
+  }
+  .work-link .row span {
+    color: #e8bd74;
+    font-size: 4.5rem;
   }
 }
 
