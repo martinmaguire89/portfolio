@@ -29,50 +29,6 @@ function checkBoxes() {
     })
 }
 
-//js added to bring the section in from right to left //
-
-// // Type Method
-// TypeWriter.prototype.type = function(){
-//     // Current idex of word
-//     const Current = this.wordindex % this.words.length;
-//     // get full text of current word
-//     const fullTxt = this.words[Current];
-
-//     if (this.isDeleting) {
-//       this.txt = fullTxt.substring(0, this.txt.length - 1);
-//     } else {
-//       this.txt = fullTxt.substring(0, this.txt.length + 1);
-//     }
-
-//     this.txtElement.innerHTML =  `<span class = "txt">${this.txt}</span>`;
-//     //initial Type speed
-//     let typeSpeed = 300;
-
-//     if(this.isDeleting) {
-//         typeSpeed /= 2;
-//     }
-
-//     //if word is complete
-//     if (!this.isDeleting && this.txt === fullTxt) {
-//       // make pause at end
-//       typeSpeed = this.wait;
-//       //set delete to true
-//       this.isDeleting = true;
-//     } else if (this.isDeleting && this.txt === '') {
-//       this.isDeleting = false;
-//       // Move to the next word
-//       this.wordIndex++;
-//       // Pause before start copying
-//       typeSpeed = 500;
-//     }
-
-//     setTimeout(() => this.type(), 500);
-// }
-
-
-
-
-
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;

@@ -3,7 +3,6 @@ html:focus-within {
 }
 
 body {
-  background-color: #262d3c;
   color: #e8bd74;
   font-family: 'Julius Sans One', 'sans-serif';
   align-items: center;
@@ -11,6 +10,22 @@ body {
   height: 100vh;
   margin: 0;
   overflow-x: hidden;
+  background-position: 100%;
+  background-image: linear-gradient(
+    to right,
+    #051937,
+    #0d1d38,
+    #132039,
+    #19243a,
+    #1f283b,
+    #252d3f,
+    #2b3343,
+    #313847,
+    #394050,
+    #424959,
+    #4b5262,
+    #545b6b
+  );
 }
 
 /* cursor */
@@ -228,14 +243,14 @@ header img {
   padding-top: 15px;
 }
 
-.footer {
-  color: #e8bd74;
-  padding: 10px;
-  text-align: center;
-}
-
-#success-message {
-  opacity: 0;
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+  justify-content: center;
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
@@ -410,6 +425,7 @@ section {
 .box2 {
   transform: translateX(400%);
   transition: transform 1s ease;
+  /* background-color: #404756; */
 }
 
 .box2:nth-of-type(even) {
@@ -418,4 +434,16 @@ section {
 
 .box2.show {
   transform: translateX(0);
+}
+
+.social-links i {
+  padding: 8px;
+}
+
+.text-center {
+  text-align: center;
+  padding: 10px;
+}
+.email-link {
+  padding: 30px;
 }
