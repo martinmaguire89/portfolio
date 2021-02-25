@@ -69,7 +69,9 @@ h5 {
   flex-wrap: wrap;
   margin-right: 0px;
   margin-left: 0px;
+  justify-content: center;
 }
+
 a {
   text-decoration: none;
   color: #e8bd74;
@@ -81,11 +83,43 @@ a:hover {
   color: #ae8842;
   text-decoration: underline;
 }
+
+/* header with typerwriter effect & image ************************************/
 header img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   filter: brightness(0.4);
+}
+
+#intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Julius Sans One', 'sans-serif';
+}
+
+.work-link {
+  text-align: center;
+}
+
+.work-link .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  justify-content: center;
+  margin-left: 0px;
+  color: #e8bd74;
+  font-size: 2.25rem;
+}
+
+.work-link p {
+  text-align: center;
+  color: #e8bd74;
 }
 
 @media screen and (min-width: 425px) {
@@ -107,49 +141,74 @@ header img {
     font-size: 4.5rem;
   }
 }
+/* header with typerwriter effect & image ******************************************/
 
-#intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: 'Julius Sans One', 'sans-serif';
-}
-
-.work-link {
-  text-align: center;
-}
-.work-link .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: 0px;
-  justify-content: center;
-  margin-left: 0px;
-  color: #e8bd74;
-  font-size: 2.25rem;
-}
-.work-link p {
-  text-align: center;
-  color: #e8bd74;
-}
-
+/* brief intro about me ***********************************************************/
 #about_me {
   font-size: 1.25rem;
 }
+/* brief intro about me **********************************************************/
 
-.myWork {
-  padding: 1rem 0;
-  float: right;
-  width: 50%;
+/* skills i'm proficient in******************************************************/
+.skill-card {
+  padding: 12px 17px;
+  border: 1px solid #e8bd74;
+  background: rgb(27, 85, 110, 0.1);
+  height: 100%;
+  text-align: center;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.skills-flex {
+  justify-content: space-evenly;
+  font-size: 20px;
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  .skills-flex {
+    flex-direction: column;
+    transition: ease-in-out 0.4s;
+  }
+}
+.skills-card,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size: xxx-large;
+}
+.skills-card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+}
+.skills-image {
+  text-align: center;
 }
 
-.myWork .title {
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 10px;
+.skills-title {
+  padding-bottom: 50px;
+}
+/* skills i'm proficient in************************************************/
+
+/* my work shows off my projects i have created. *************************/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 16px;
+  padding-top: 15px;
 }
 
 .content {
@@ -236,22 +295,8 @@ header img {
 .fadeIn-right {
   left: 80%;
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 16px;
-  padding-top: 15px;
-}
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: 0px;
-  margin-left: 0px;
-  justify-content: center;
-}
+/* my work shows off my projects i have created. *****************************************/
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
   padding: 0 20% 0 20%;
@@ -259,138 +304,6 @@ header img {
 
 .margin-top-25 {
   margin-top: 25px;
-}
-
-.form-title {
-  padding: 25px;
-  font-size: 30px;
-  font-weight: 300;
-  font-family: 'Julius Sans One', 'sans-serif';
-}
-
-.form-group .form-control {
-  --webkit-box-shadow: none;
-  border-bottom: 1px;
-  border-style: none none solid none;
-  border-radius: 0;
-  border-color: #000;
-}
-
-.form-group .form-control:focus {
-  box-shadow: none;
-  border-width: 0 0 2px 0;
-  border-color: #000;
-}
-
-textarea {
-  resize: none;
-}
-
-.btn-mod.btn-large {
-  height: auto;
-  padding: 13px 52px;
-  font-size: 15px;
-}
-
-.btn-mod.btn-border {
-  color: #e8bd74;
-  border: 1px solid #e8bd74;
-  background: transparent;
-}
-
-.btn-mod,
-a.btn-mod {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 4px 13px;
-  color: #fff;
-  background: rgba(34, 34, 34, 0.9);
-  border: 1px solid transparent;
-  font-size: 11px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
-}
-
-.btn-mod.btn-border:hover,
-.btn-mod.btn-border:active,
-.btn-mod.btn-border:focus,
-.btn-mod.btn-border:active:focus {
-  color: #262d3c;
-  border-color: #ae8842;
-  background: #ae8842;
-  outline: none;
-}
-
-@media only screen and (max-width: 500px) {
-  .btn-mod.btn-large {
-    padding: 6px 16px;
-    font-size: 11px;
-  }
-}
-
-.skill-card {
-  padding: 12px 17px;
-  border: 1px solid #e8bd74;
-  background: rgb(27, 85, 110, 0.1);
-  height: 100%;
-  text-align: center;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.2);
-}
-.skills-flex {
-  justify-content: space-evenly;
-  font-size: 20px;
-  display: flex;
-}
-@media screen and (max-width: 700px) {
-  .skills-flex {
-    flex-direction: column;
-    transition: ease-in-out 0.4s;
-  }
-}
-.skill-card,
-.fab {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  font-size: xxx-large;
-}
-.skills-card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-}
-.skills-image {
-  text-align: center;
-}
-
-.skills-title {
-  padding-bottom: 50px;
 }
 
 section {
@@ -409,6 +322,7 @@ section {
   }
 }
 
+/* css used to apply the fading in of section from the left *****************************************/
 .box {
   transform: translateX(400%);
   transition: transform 1s ease;
@@ -422,10 +336,12 @@ section {
   transform: translateX(0);
 }
 
+/* css used to apply the fading in of section from the left *******************************************/
+
+/* css used to apply the fading in of section from the right *****************************************/
 .box2 {
   transform: translateX(400%);
   transition: transform 1s ease;
-  /* background-color: #404756; */
 }
 
 .box2:nth-of-type(even) {
@@ -435,6 +351,7 @@ section {
 .box2.show {
   transform: translateX(0);
 }
+/* css used to apply the fading in of section from the right ***************************************/
 
 .social-links i {
   padding: 8px;
