@@ -11,21 +11,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-position: 100%;
-  background-image: linear-gradient(
-    to right,
-    #051937,
-    #0d1d38,
-    #132039,
-    #19243a,
-    #1f283b,
-    #252d3f,
-    #2b3343,
-    #313847,
-    #394050,
-    #424959,
-    #4b5262,
-    #545b6b
-  );
+  background-color: #121212;
 }
 
 /* cursor */
@@ -219,6 +205,7 @@ header img {
   max-height: 90%;
   margin: auto;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 3px rgb(232, 189, 116, 0.7);
 }
 
 .content .content-overlay {
